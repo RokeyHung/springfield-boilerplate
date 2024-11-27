@@ -29,7 +29,7 @@ export default [
     rules: {
       // `import/default`, `import/namespace` and `import/no-duplicates` are slow.
       '@typescript-eslint/no-var-requires': 0,
-      curly: 2,
+      curly: ['error', 'multi-line'],
       'import/default': 0,
       'import/named': 0,
       'import/namespace': 0,
@@ -38,7 +38,12 @@ export default [
       'import/no-named-as-default-member': 0,
       'import/no-unresolved': 0,
       'import/order': 0,
-      'no-console': 2,
+      'no-console': [
+        'error',
+        {
+          allow: ['warn', 'error', 'info', 'debug'],
+        },
+      ],
       'no-const-assign': 2,
       'no-constant-binary-expression': 2,
       'no-extra-parens': [2, 'functions'],
@@ -75,13 +80,7 @@ export default [
       'react/jsx-sort-props': 0, // Handled by perfectionist
       'react/prop-types': 2,
       'react/react-in-jsx-scope': 0,
-      'react/require-default-props': [
-        2,
-        {
-          forbidDefaultForRequired: true,
-          functions: 'defaultArguments',
-        },
-      ],
+      'react/require-default-props': 'off',
       'unicorn/better-regex': 2,
       'unicorn/catch-error-name': 2,
       'unicorn/consistent-empty-array-spread': 2,
@@ -113,7 +112,16 @@ export default [
       'unicorn/prefer-ternary': 2,
       'unicorn/prefer-top-level-await': 0, // not valid on RN for the moment
       'unicorn/text-encoding-identifier-case': 2,
-      'unused-imports/no-unused-imports': 0,
+      'unused-imports/no-unused-imports': 'error',
+      'unused-imports/no-unused-vars': [
+        'warn',
+        {
+          args: 'after-used',
+          argsIgnorePattern: '^_',
+          vars: 'all',
+          varsIgnorePattern: '^_',
+        },
+      ],
     },
     settings: {
       perfectionist: {

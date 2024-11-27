@@ -37,6 +37,9 @@ export const staticFontStyles = {
   capitalize: {
     textTransform: 'capitalize',
   },
+  medium: {
+    fontWeight: 'medium',
+  },
   uppercase: {
     textTransform: 'uppercase',
   },

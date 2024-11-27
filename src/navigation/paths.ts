@@ -1,4 +1,7 @@
 export const enum Paths {
-  Example = 'example',
+  Discover = 'discover',
+  Home = 'home',
+  Login = 'login',
+  MyPage = 'myPage',
   Startup = 'startup',
 }

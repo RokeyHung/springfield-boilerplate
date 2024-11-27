@@ -9,6 +9,8 @@ import ApplicationNavigator from '@/navigation/Application';
 
 import '@/translations';
 
+import { AppProvider } from './provider';
+
 export const queryClient = new QueryClient({
   defaultOptions: {
     mutations: {
@@ -27,7 +29,9 @@ function App() {
     <GestureHandlerRootView>
       <QueryClientProvider client={queryClient}>
         <ThemeProvider storage={storage}>
-          <ApplicationNavigator />
+          <AppProvider>
+            <ApplicationNavigator />
+          </AppProvider>
         </ThemeProvider>
       </QueryClientProvider>
     </GestureHandlerRootView>

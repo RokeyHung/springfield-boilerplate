@@ -4,7 +4,7 @@ import { Text, TouchableOpacity, View } from 'react-native';
 
 import { useTheme } from '@/theme';
 
-import { IconByVariant } from '@/components/atoms';
+import { IconByVariant } from '@/components';
 
 type Props = {
   onReset?: () => void;

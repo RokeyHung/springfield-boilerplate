@@ -53,7 +53,33 @@ type GapGutters = {
   };
 };
 
+type Heights = 'height' | 'maxHeight' | 'minHeight';
+
+type HeightsKeys = `${Heights}_${ArrayValue<typeof config.gutters>}`;
+
+type HeightsGutters = {
+  [key in HeightsKeys]: {
+    [K in Extract<RemoveAfterSeparator<key>, Paddings>]: ToNumber<
+      RemoveBeforeSeparator<key>
+    >;
+  };
+};
+
+type Widths = 'maxWidth' | 'minWidth' | 'width';
+
+type WidthsKeys = `${Widths}_${ArrayValue<typeof config.gutters>}`;
+
+type WidthsGutters = {
+  [key in WidthsKeys]: {
+    [K in Extract<RemoveAfterSeparator<key>, Paddings>]: ToNumber<
+      RemoveBeforeSeparator<key>
+    >;
+  };
+};
+
 export type Gutters = GapGutters &
+  HeightsGutters &
   MarginGutters &
   PaddingGutters &
-  typeof staticGutterStyles;
+  typeof staticGutterStyles &
+  WidthsGutters;

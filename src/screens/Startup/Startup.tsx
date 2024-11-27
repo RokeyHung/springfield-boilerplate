@@ -1,3 +1,4 @@
+import type { Paths } from '@/navigation/paths';
 import type { RootScreenProps } from '@/navigation/types';
 
 import { useQuery } from '@tanstack/react-query';
@@ -6,10 +7,8 @@ import { useTranslation } from 'react-i18next';
 import { ActivityIndicator, Text, View } from 'react-native';
 
 import { useTheme } from '@/theme';
-import { Paths } from '@/navigation/paths';
 
-import { AssetByVariant } from '@/components/atoms';
-import { SafeScreen } from '@/components/templates';
+import { AssetByVariant, SafeScreen } from '@/components';
 
 function Startup({ navigation }: RootScreenProps<Paths.Startup>) {
   const { fonts, gutters, layout } = useTheme();
@@ -26,7 +25,7 @@ function Startup({ navigation }: RootScreenProps<Paths.Startup>) {
     if (isSuccess) {
       navigation.reset({
         index: 0,
-        routes: [{ name: Paths.Example }],
+        routes: [{ name: 'TabNavigator' }],
       });
     }
   }, [isSuccess, navigation]);

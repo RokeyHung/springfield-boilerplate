@@ -9,6 +9,9 @@ export const generateGutters = (configuration: UnionConfiguration): Gutters => {
       [`gap_${curr}`]: {
         gap: curr,
       },
+      [`height_${curr}`]: {
+        height: curr,
+      },
       [`margin_${curr}`]: {
         margin: curr,
       },
@@ -30,6 +33,18 @@ export const generateGutters = (configuration: UnionConfiguration): Gutters => {
       [`marginVertical_${curr}`]: {
         marginVertical: curr,
       },
+      [`maxHeight_${curr}`]: {
+        maxHeight: curr,
+      },
+      [`maxWidth_${curr}`]: {
+        maxWidth: curr,
+      },
+      [`minHeight_${curr}`]: {
+        minHeight: curr,
+      },
+      [`minWidth_${curr}`]: {
+        minWidth: curr,
+      },
       [`padding_${curr}`]: {
         padding: curr,
       },
@@ -50,6 +65,9 @@ export const generateGutters = (configuration: UnionConfiguration): Gutters => {
       },
       [`paddingVertical_${curr}`]: {
         paddingVertical: curr,
+      },
+      [`width_${curr}`]: {
+        width: curr,
       },
     });
   }, {} as Gutters);
