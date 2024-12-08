@@ -14,7 +14,10 @@
     "lint:fix": "yarn lint:rules --fix && yarn lint:code-format --write && yarn lint:type-check",
     "test:report": "jest --collectCoverage --coverageDirectory=\"./coverage\" --ci --reporters=default --reporters=jest-junit --coverage",
     "pod-install": "npx pod-install",
-    "postinstall": "npx patch-package"
+    "postinstall": "npx patch-package",
+    "build-apk": "cd android && ./gradlew assembleRelease",
+    "build-aab": "cd android && ./gradlew bundleRelease",
+    "rebuild-all-android:dev": "rm -rf node_modules && rm -rf android/build && rm -rf android/app/build && yarn && cd android && ./gradlew clean"
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^5.0.6",
@@ -44,6 +47,7 @@
     "react-native-image-crop-picker": "^0.41.5",
     "react-native-linear-gradient": "^2.8.3",
     "react-native-mmkv": "^3.1.0",
+    "react-native-outside-press": "^1.2.2",
     "react-native-permissions": "^5.2.0",
     "react-native-reanimated": "^3.16.2",
     "react-native-render-html": "^6.3.4",

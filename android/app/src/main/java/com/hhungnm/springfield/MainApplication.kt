@@ -1,4 +1,4 @@
-package com.springfield
+package com.hhungnm.springfield
 
 import android.app.Application
 import com.facebook.react.PackageList

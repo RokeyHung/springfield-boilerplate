@@ -1,0 +1,6 @@
+# Remember to never publicly share your keystore.
+key.properties
+**/*.keystore
+**/*.jks
+
+/app/release

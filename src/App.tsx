@@ -9,6 +9,8 @@ import ApplicationNavigator from '@/navigation/Application';
 
 import '@/translations';
 
+import { EventProvider } from 'react-native-outside-press';
+
 import { AppProvider } from './provider';
 
 export const queryClient = new QueryClient({
@@ -29,9 +31,11 @@ function App() {
     <GestureHandlerRootView>
       <QueryClientProvider client={queryClient}>
         <ThemeProvider storage={storage}>
-          <AppProvider>
-            <ApplicationNavigator />
-          </AppProvider>
+          <EventProvider>
+            <AppProvider>
+              <ApplicationNavigator />
+            </AppProvider>
+          </EventProvider>
         </ThemeProvider>
       </QueryClientProvider>
     </GestureHandlerRootView>

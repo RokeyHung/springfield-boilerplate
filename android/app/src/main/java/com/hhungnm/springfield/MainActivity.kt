@@ -1,4 +1,4 @@
-package com.springfield
+package com.hhungnm.springfield
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity

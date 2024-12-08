@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "17897922640",
+    "project_id": "springfield-6108c",
+    "storage_bucket": "springfield-6108c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17897922640:android:e75967eeb36ec3310c7155",
+        "android_client_info": {
+          "package_name": "com.hhungnm.springfield"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17897922640-3vgbueddm6a82vfv8i923br0igh82e4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hhungnm.springfield",
+            "certificate_hash": "820e3636ce05e814cfd79bbeadfe3db0d3375812"
+          }
+        },
+        {
+          "client_id": "17897922640-d891m6clnpqs15aeuhd8sf3nflnjkhdo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hhungnm.springfield",
+            "certificate_hash": "80a638104aecf477da7afe81b406f50257cbfa98"
+          }
+        },
+        {
+          "client_id": "17897922640-p8f39543iol56g8a0keisgaqedia6m39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6-etTDUvj7xGMa5nKVeTBvtjb5qjSXAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17897922640-p8f39543iol56g8a0keisgaqedia6m39.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "17897922640-g5t9f4ibhah9b08jaes3j5u3oop4o89b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hhungnm.springfield"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
