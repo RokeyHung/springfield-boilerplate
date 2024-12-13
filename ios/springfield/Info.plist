@@ -31,8 +31,16 @@
 			<key>NSAllowsLocalNetworking</key>
 			<true />
 		</dict>
-		<key>NSLocationWhenInUseUsageDescription</key>
-		<string></string>
+		<key>NSCameraUsageDescription</key>
+		<string>Ứng dụng cần sử dụng camera để chụp ảnh hoặc quay video.</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>Ứng dụng cần truy cập thư viện ảnh để tải lên hoặc chỉnh sửa ảnh.</string>
+		<key>NSPhotoLibraryAddUsageDescription</key>
+		<string>Ứng dụng cần lưu ảnh hoặc video vào thư viện của bạn.</string>
+		<key>NSUserTrackingUsageDescription</key>
+		<string>Ứng dụng cần quyền này để cung cấp quảng cáo và nội dung phù hợp.</string>
+		<key>NSPushNotificationsUsageDescription</key>
+		<string>Ứng dụng cần gửi thông báo để cập nhật thông tin mới nhất cho bạn.</string>
 		<key>UILaunchStoryboardName</key>
 		<string>LaunchScreen.storyboard</string>
 		<key>UIRequiredDeviceCapabilities</key>
@@ -51,5 +59,17 @@
 		</array>
 		<key>UIViewControllerBasedStatusBarAppearance</key>
 		<false />
+		<key>UIAppFonts</key>
+		<array>
+			<string>Inter-Black.ttf</string>
+			<string>Inter-Bold.ttf</string>
+			<string>Inter-ExtraBold.ttf</string>
+			<string>Inter-ExtraLight.ttf</string>
+			<string>Inter-Light.ttf</string>
+			<string>Inter-Medium.ttf</string>
+			<string>Inter-Regular.ttf</string>
+			<string>Inter-SemiBold.ttf</string>
+			<string>Inter-Thin.ttf</string>
+		</array>
 	</dict>
 </plist>

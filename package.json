@@ -15,9 +15,13 @@
     "test:report": "jest --collectCoverage --coverageDirectory=\"./coverage\" --ci --reporters=default --reporters=jest-junit --coverage",
     "pod-install": "npx pod-install",
     "postinstall": "npx patch-package",
+    "link-font": "npx react-native-asset",
     "build-apk": "cd android && ./gradlew assembleRelease",
     "build-aab": "cd android && ./gradlew bundleRelease",
-    "rebuild-all-android:dev": "rm -rf node_modules && rm -rf android/build && rm -rf android/app/build && yarn && cd android && ./gradlew clean"
+    "repair-build-gradlew": "rm -rf android/build && rm -rf android/app/build && cd android && ./gradlew clean && cd ..",
+    "repair-build-pod": "rm -rf ios/build && rm -rf ios/Pods && cd ios && pod install && cd ..",
+    "repair-build-all-android": "rm -rf node_modules && yarn && yarn repair-build-gradlew",
+    "repair-build-all-ios": "rm -rf node_modules && yarn && yarn repair-build-pod"
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^5.0.6",
